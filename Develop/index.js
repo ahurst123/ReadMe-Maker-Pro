@@ -38,6 +38,16 @@ inquirer
             name: 'license',
             message: 'Select a license',
             choices: ['1 year license', '3 year license', '5 year license']
-        }
+        },
+        {
+            type: 'input',
+            name: 'GithubUsername',
+            message: 'Enter your Github username:'
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Enter your email:',
+        },
     ])
 
