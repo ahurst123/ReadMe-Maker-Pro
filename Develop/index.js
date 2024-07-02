@@ -6,7 +6,32 @@ inquirer
         {
         type: 'input',
         name: 'title',
-        message: 'Enter project title:'
-        }
+        message: 'Enter project title:',
+        },
+        {
+            type: 'input',
+            name: 'description',
+            message: 'Enter desciption of project:',
+        },
+        {
+            type: 'input',
+            name:'installationInstructions',
+            message:'Enter installation instructions:',
+        },
+        {
+            type: 'input',
+            name: 'usageInformation',
+            message: 'Enter usage information:',
+        },
+        {
+            type: 'input',
+            name: 'contributionGuidelines',
+            message: 'Enter contribution guidelines:',
+        },
+        {
+            type: 'input',
+            name: 'testInstructions',
+            message: 'Enter test instructions:',
+        },
     ])
-    
+
