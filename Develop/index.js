@@ -1,6 +1,21 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+const generateREADME = ({ title, description, installationInstructions, usageInformation, contributionGuidlines, test, license, email, Github}) =>
+`
+    ${title}
+    Description: ${description}
+    How to Install: ${installationInstructions}
+    Usage Information: ${usageInformation}
+    Contribution Guidelines: ${contributionGuidlines}
+    How to test: ${test}
+    License: ${license}
+
+    About Me:
+    My Github: github.com/${Github}
+    My Email: ${email}
+
+`
 inquirer
     .prompt([
         {
@@ -30,7 +45,7 @@ inquirer
         },
         {
             type: 'input',
-            name: 'testInstructions',
+            name: 'test',
             message: 'Enter test instructions:',
         },
         {
@@ -41,7 +56,7 @@ inquirer
         },
         {
             type: 'input',
-            name: 'GithubUsername',
+            name: 'Github',
             message: 'Enter your Github username:'
         },
         {
