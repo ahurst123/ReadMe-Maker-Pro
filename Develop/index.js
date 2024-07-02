@@ -33,5 +33,11 @@ inquirer
             name: 'testInstructions',
             message: 'Enter test instructions:',
         },
+        {
+            type: 'list-input',
+            name: 'license',
+            message: 'Select a license',
+            choices: ['1 year license', '3 year license', '5 year license']
+        }
     ])
 
