@@ -3,23 +3,25 @@ const fs = require('fs');
 
 const generateREADME = ({ title, description, installationInstructions, usageInformation, contributionGuidlines, test, license, email, Github}) =>
 `
-    ${title}
-    Description: ${description}
+# ${title}
 
-    How to Install: ${installationInstructions}
-    Usage Information: ${usageInformation}
-    Contribution Guidelines: ${contributionGuidlines}
-    How to test: ${test}
-    License: ${license}
+## Links:
+- [Description](#Description)
+- [How-to-Install](#How-to-Install)
+- [About-Me](#About-Me)
 
-    About Me:
-    My Github: github.com/${Github}
-    My Email: ${email}
+## Description: ${description}
 
-    Links: 
-    Description
-    Useful Stuffs
-    About Me
+## How-to-Install: ${installationInstructions}
+## Usage Information: ${usageInformation}
+## Contribution Guidelines: ${contributionGuidlines}
+## How to test: ${test}
+## License: ${license}
+
+## About-Me:
+## My Github: github.com/${Github}
+## My Email: ${email}
+
 `
 inquirer
     .prompt([
@@ -54,7 +56,7 @@ inquirer
             message: 'Enter test instructions:',
         },
         {
-            type: 'list-input',
+            type: 'list',
             name: 'license',
             message: 'Select a license',
             choices: ['1 year license', '3 year license', '5 year license']
