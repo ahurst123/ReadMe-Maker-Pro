@@ -65,4 +65,11 @@ inquirer
             message: 'Enter your email:',
         },
     ])
+.then((answers) => {
+    const READMEContent = generateREADME(answers);
+
+    fs.writeFile('README.md', READMEContent, (err) =>
+    err ? console.log(err) : console.log ('Successfully created README.md!')\
+);
+});
 
