@@ -5,6 +5,7 @@ const generateREADME = ({ title, description, installationInstructions, usageInf
 `
     ${title}
     Description: ${description}
+
     How to Install: ${installationInstructions}
     Usage Information: ${usageInformation}
     Contribution Guidelines: ${contributionGuidlines}
@@ -15,6 +16,10 @@ const generateREADME = ({ title, description, installationInstructions, usageInf
     My Github: github.com/${Github}
     My Email: ${email}
 
+    Links: 
+    Description
+    Useful Stuffs
+    About Me
 `
 inquirer
     .prompt([
