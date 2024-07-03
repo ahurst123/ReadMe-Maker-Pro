@@ -18,3 +18,4 @@
 ## My Github: github.com/ahurst123
 ## My Email: austinhurst123@gmail.com
 
+## Video tutorial: https://youtu.be/EGxSwag9pqk
